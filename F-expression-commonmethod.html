@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var Area=function(){      //function expression
+			return this.length*this.width;
+		}
+
+
+		var myhouse=new Object();
+		myhouse.name="Sharda Bhavan";
+		myhouse.length=50;
+		myhouse.width=30;
+		myhouse.area=Area;
+
+
+		document.write("<br> My house area is : "+myhouse.area());
+
+
+		var urhouse={
+			name:"Sharma Bhavan",
+			length:30,
+			width:25,
+			area:Area
+
+		};
+		document.write("<br>Ur house area is : "+urhouse.area());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

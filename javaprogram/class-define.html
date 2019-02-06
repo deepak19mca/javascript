@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var Mobile=function(model_no,sprice)
+		{
+			this.model=model_no;
+			this.color="white";
+			this.price=3000;
+			this.sp=sprice;
+			this.sellinprice =function()
+			{
+				return (this.price+this.sp);
+			};
+			this.data=function()
+			{
+				document.write("Model No : "+this.model+" Price : "+this.sellinprice());
+			}
+		};
+		var Samsung=new Mobile('Galaxy',2000);
+		var Nokia=new Mobile('3310',1000);
+
+		Nokia.data();
+		document.write("<br> Samsung sellinprice : "+Samsung.sellinprice());
+	</script>
+
+</body>
+</html>

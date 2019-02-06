@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person=function(name,age,city,country)
+		{
+			person.name=name;
+			this.age=age;
+			this.city=city;
+			this.country=country;
+			this.fullname=function()
+			{
+				var info="Your Name is "+name+ "Age is" +age+ "and city is" +city+ "& country is" +country;
+				return info;  
+			}
+		}
+		var obj1=new person('rahul',25,'gwalior','India');
+		var obj2=new person('sachin',26,'dabra','India');
+
+		for(var property in obj2)
+		{
+			//document.write(property+":" +obj2[property]+"<br/>")
+			document.write(property+":" +obj1[property]+"<br/>")
+		}
+	</script>
+
+</body>
+</html>

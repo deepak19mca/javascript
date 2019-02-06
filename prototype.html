@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prototype in javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person=function(name,age,city,country)
+		{
+			this.name=name;
+			this.age=age;
+			this.city=city;
+			this.country=country;
+
+		}
+		var rahul=new person('Rahul Jha',25,'Gwalior','India');
+		var rishav=new person('Rishav Jain'30,'Delhi','India');
+
+		// if we show all object of that classes
+		person.prototype.birthyear=function()
+		{
+			var currentyear=new Date().getFullYear();
+			return currentyear-this.age;
+		}
+		document.write(rishav.birthyear());
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var myhouse=new Object();
+		myhouse.name="Sharda Bhavan";
+		myhouse.length=25;
+		myhouse.width=30;
+		myhouse.area=function()
+		{
+			return this.length*myhouse.width;
+		}
+		document.write("My House Area is : "+myhouse.area());
+
+
+
+		var urhouse=new Object();
+		urhouse.name="Balabh Bhavan";
+		urhouse.length=30;
+		urhouse.width=35;
+		urhouse.area=function()
+		{
+			return this.length*this.width;
+		}
+		document.write("<br>Your House Area is : "+urhouse.area());
+	</script>
+
+</body>
+</html>

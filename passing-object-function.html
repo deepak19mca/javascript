@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person=function(name,age,city)
+		{
+			this.name=name;
+			this.age=age;
+			this.city=city;
+
+		}
+		var rishi=new person('Rahul Jha',25,'Gwalior','India');
+		var rishav=new person('Piyush Jain',36,'Gwalior','India');
+		var ankit=new person('Ankit Sharma',32,'Gwalior','India');
+
+		function agedifference(p1,p2)
+		{
+			var diff=Math.abs(p1.age-p2.age);
+			document.write("Age difference between "+p1.name+" and "+p2.name+" is "+diff+" years");
+		}
+		agedifference(rishi,ankit);
+	</script>
+
+</body>
+</html>
